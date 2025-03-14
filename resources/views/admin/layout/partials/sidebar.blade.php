@@ -11,7 +11,7 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
                     Users
                 </a>
-                <a class="nav-link" href="{{ route('roles') }}">
+                <a class="nav-link" href="{{ route('role.index') }}">
                     <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
                     Roles
                 </a>
