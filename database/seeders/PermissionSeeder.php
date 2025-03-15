@@ -11,6 +11,7 @@ class PermissionSeeder extends Seeder
 {
      // Define groups
      public const GROUP_ROLE = 'role';
+     public const GROUP_PERMISSION = 'permission';
 
     public function run(): void
     {
@@ -59,6 +60,18 @@ class PermissionSeeder extends Seeder
                 'name' => 'Delete',
                 'slug' => self::GROUP_ROLE . '_delete',
                 'group' => self::GROUP_ROLE,
+            ],
+
+            // Permission
+            [
+                'name' => 'List',
+                'slug' => self::GROUP_PERMISSION . '_index',
+                'group' => self::GROUP_PERMISSION,
+            ],
+            [
+                'name' => 'Update',
+                'slug' => self::GROUP_PERMISSION . '_update',
+                'group' => self::GROUP_PERMISSION,
             ],
         ];
     }

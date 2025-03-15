@@ -6,7 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Permission extends Model
 {
-    protected $fillable = ['name'];
+    protected $fillable = [
+        'name',
+        'slug',
+        'group',
+        'for',
+        
+    ];
 
     public function roles() {
         return $this->belongsToMany(Role::class);
